@@ -27,4 +27,18 @@
             <a href="{% url 'register' %}">Don't have an account?</a>
         </p>
     </div>
+    <div class="social">
+        <ul>
+            <li class="facebook">
+                <a href="{% url 'social:begin' 'facebook' %}">
+                    Login with Facebook
+                </a>
+            </li>
+            <li class="google">
+                <a href="{% url 'social:begin' 'google-oauth2' %}">
+                    Login with Google
+                </a>
+            </li>
+        </ul>
+    </div>
 {% endblock %}
